@@ -1,7 +1,12 @@
 /*
-Dada la siguiente definici髇 recursiva:
-Formule el m骴ulo recursivo y la traza para el c醠culo del resto (22,5).
-Nota: Esta funci髇 permite encontrar el resto de la divisi髇 entera entre X e Y.*/
+Dada la siguiente definici贸n recursiva:
+resto_rec(x,y){
+	-x ; si x<y
+ 	-resto_rec(x-y,y) si x>=y
+}
+Formule el m贸dulo recursivo y la traza para el c谩lculo del resto (22,5).
+Nota: Esta funci贸n permite encontrar el resto de la divisi贸n entera entre X e Y.
+*/
 #include <stdio.h>
 int resto_rec(int, int);
 int main() {
